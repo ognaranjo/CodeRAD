@@ -44,6 +44,10 @@ public class PickerPropertyViewBuilder extends PropertyViewBuilder<Picker> {
             picker.setType(Display.PICKER_TYPE_DURATION_HOURS);
         } else if ("raddurationMinutesPicker".equalsIgnoreCase(t)) {
             picker.setType(Display.PICKER_TYPE_DURATION_MINUTES);
+        } else if ("radStringPicker".equalsIgnoreCase(t)) {
+            picker.setType(Display.PICKER_TYPE_STRINGS);
+        } else if ("radPicker".equalsIgnoreCase(t)) {
+            picker.setType(Display.PICKER_TYPE_STRINGS);
         }
         return new PickerPropertyView(picker, getEntity(), fieldNode);
     }
